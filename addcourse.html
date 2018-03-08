@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style/normalize.css" />    
+    <link rel="stylesheet" type="text/css" media="screen" href="style/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
 </head>
+
 <body>
-    
+
     <form id="course-container" class="course-container" onsubmit="addcourseFunc(event)">
-            <input id="name" type="text" placeholder="Name of course">
-            <input id="author" type="text" placeholder="Author of Course">
-        
-            <textarea id="description" placeholder="Enter Description"></textarea>
-        
-            <input id="price" type="number" min="10" placeholder="price">
+        <input id="name" type="text" placeholder="Name of course">
+        <input id="author" type="text" placeholder="Author of Course">
 
-            <select id="s" onchange="combo(this)">
-                <option disabled selected value="0"> -- Select Rating -- </option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-            
-            <button onsubmit="addcourseFunc(event)" id="addcourseid">Add Course!</button>
-        </form>
+        <textarea id="description" placeholder="Enter Description"></textarea>
 
-        <div class="nb"><button id="nextpage" onclick="redirect()">Next Page!</button></div>
-        
-    </body>
+        <input id="price" type="number" min="10" placeholder="price">
+
+        <select id="s" onchange="combo(this)">
+            <option disabled selected value="0"> -- Select Rating -- </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <button onsubmit="addcourseFunc(event)" id="addcourseid">Add Course!</button>
+    </form>
+
+    <div class="nb">
+        <button id="nextpage" onclick="redirect()">Next Page!</button>
+    </div>
+
+</body>
 <script src="main.js"></script>
+
 </html>
